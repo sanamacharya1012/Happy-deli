@@ -34,14 +34,15 @@ counters.forEach((counter) => {
   updateCount();
 });
 // Select all pins
-const pins = document.querySelectorAll(".map-pin");
+document.addEventListener("DOMContentLoaded", function () {
+  const pins = document.querySelectorAll(".map-pin");
 
-pins.forEach((pin) => {
-  pin.addEventListener("click", () => {
-    // Remove active class from all pins
-    pins.forEach((p) => p.classList.remove("active"));
-
-    // Add active class to clicked pin
-    pin.classList.add("active");
+  pins.forEach((pin) => {
+    pin.addEventListener("click", function () {
+      // Remove active class from all pins
+      pins.forEach((p) => p.classList.remove("active"));
+      // Add active to clicked pin
+      pin.classList.add("active");
+    });
   });
 });
