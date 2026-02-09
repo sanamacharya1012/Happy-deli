@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Happy Deli</title>
+    <title>Services - Happy Daily</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <header>
     <div class="container">
         <nav>
-            <div class="logo"><h2>Happy Deli</h2></div>
+            <div class="logo"><h2>Happy Daily Express</h2></div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -26,90 +27,134 @@
 
 <!-- Hero Section -->
 <section class="hero">
-    <h1>Our Logistics Services</h1>
-    <p>We provide a wide range of logistics and supply chain solutions tailored for businesses of all sizes.</p>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>Our Logistics Services</h1>
+      <p>We provide a wide range of logistics and supply chain solutions tailored for businesses of all sizes.</p>
+      <a href="#services" class="btn">Learn More</a>
+    </div>
+    <!-- Optional: add an image next to text -->
+    <div class="hero-image">
+      <img src="assets/images/happy daily 2.png" alt="Logistics Services">
+    </div>
+  </div>
 </section>
 
+
 <!-- Services Section -->
-<section class="container">
-    <div class="section-title"><h2>What We Offer</h2></div>
+<section class="services-section">
+  <div class="service-card">
+    <i class="fas fa-map-marker-alt stat-icon"></i>
+    <h2>Advanced Real-Time Tracking</h2>
+    <p>
+      At <strong>Happy Daily Express</strong>, monitor your shipments from pickup to delivery with our state-of-the-art tracking system. Receive live location updates, instant notifications, and detailed reports, ensuring your goods are always safe, on time, and fully visible.
+    </p>
+  </div>
 
-    <div class="grid">
-        <!-- Service 1 -->
-        <div class="card">
-            <i class="fas fa-truck stat-icon"></i>
-            <h3>Road Transport</h3>
-            <p>Efficient and reliable road transport for your goods across local and national routes, ensuring timely deliveries every time.</p>
-        </div>
+  <div class="service-card">
+    <i class="fas fa-money-bill-wave stat-icon"></i>
+    <h2>Express Cash on Delivery</h2>
+    <p>
+      Our Express Cash on Delivery service ensures fast, secure, and reliable payment collection across all 7 provinces and 77 districts of Nepal. Track payments in real-time and get instant notifications for every transaction, making your logistics smooth and hassle-free.
+    </p>
+  </div>
 
-        <!-- Service 2 -->
-        <div class="card">
-            <i class="fas fa-plane stat-icon"></i>
-            <h3>Air Freight</h3>
-            <p>Fast and secure air cargo solutions to help you meet tight deadlines and international shipping requirements.</p>
-        </div>
+  <div class="service-card">
+    <i class="fas fa-shipping-fast stat-icon"></i>
+    <h2>Nationwide Delivery</h2>
+    <p>
+      Deliver your goods safely and efficiently across all 7 provinces and 77 districts of Nepal. From major cities to remote towns, <strong>Happy Daily Express</strong> guarantees timely and reliable delivery for every shipment.
+    </p>
+  </div>
+
+  <!-- Everyday Payment Section -->
+<div class="service-card">
+  <i class="fas fa-wallet stat-icon"></i>
+  <h2>Everyday Payment</h2>
+  <p>
+    With <strong>Happy Daily Express</strong>, enjoy hassle-free everyday payment collection for all your shipments. Our system ensures secure, timely, and accurate settlements, giving your business complete control over cash flow while serving all 7 provinces and 77 districts of Nepal.
+  </p>
+</div>
+
+<!-- CSS for Icon (already included in previous snippet, color can be customized) -->
+<style>
+.service-card:nth-child(4) i.stat-icon {
+    color: #ff4500; /* Orange accent for payment */
+}
+</style>
+
+</section>
 
         <!-- Service 3 -->
-        <div class="card">
+        <!-- <div class="card">
             <i class="fas fa-warehouse stat-icon"></i>
             <h3>Warehousing</h3>
             <p>State-of-the-art storage facilities with inventory management, ensuring your products are safe and accessible when needed.</p>
-        </div>
+        </div> -->
 
         <!-- Service 4 -->
-        <div class="card">
+        <!-- <div class="card">
             <i class="fas fa-shipping-fast stat-icon"></i>
             <h3>Supply Chain Solutions</h3>
             <p>Customized logistics strategies to optimize your supply chain from manufacturer to customer, increasing efficiency and reducing costs.</p>
-        </div>
+        </div> -->
 
         <!-- Service 5 -->
-        <div class="card">
+        <!-- <div class="card">
             <i class="fas fa-box-open stat-icon"></i>
             <h3>Package Handling</h3>
             <p>Professional handling and tracking of packages to ensure safe delivery and excellent customer experience.</p>
-        </div>
+        </div> -->
     </div>
 </section>
 
 <footer>
-  <div class="footer-container">
+  <!-- <div class="footer-container">
     <div class="footer-column">
       <h4>About Happy Deli</h4>
       <p>Happy Deli Private Limited is a trusted logistics provider connecting businesses efficiently and reliably across Nepal.</p>
-    </div>
+    </div> -->
 
-    <div class="footer-column">
+    <!-- <div class="footer-column">
       <h4>Quick Links</h4>
       <a href="index.html">Home</a><br>
       <a href="services.html">Services</a><br>
       <a href="careers.html">Careers</a><br>
       <a href="contact.html">Contact</a>
-    </div>
+    </div> -->
 
     <div class="footer-column">
       <h4>Contact Us</h4>
-      <p>📍 Kathmandu, Nepal</p>
-      <p>📞 +977 9851126762</p>
-      <p>✉️ sanam.acharya1012@gmail.com</p>
+      <p>📍 Thapagaau-11, Kathmandu, Nepal</p>
+      <p>📞 +977 9713094438</p>
+      <p>✉️ rapidexpress2025@gmail.com</p>
       <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+       <a href="https://www.facebook.com/yourprofile" target="_blank" class="facebook-icon">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/yourprofile" target="_blank" class="instagram-icon">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@yourprofile" target="_blank" class="tiktok-icon">
+        <i class="fab fa-tiktok"></i>
+    </a>
       </div>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2026 Happy Deli Private Limited. All Rights Reserved.</p>
+    <p>&copy; 2026 Happy Daily Private Limited. All Rights Reserved.</p>
   </div>
 </footer>
 
 
 <!-- WhatsApp Button -->
-<a id="whatsapp-btn" href="https://wa.me/9779851126762" target="_blank" title="Chat with us on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+<a 
+  href="https://wa.me/9779713094438" 
+  target="_blank" 
+  id="whatsapp-btn" 
+  title="Chat with us on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
 </a>
-
 </body>
 </html>

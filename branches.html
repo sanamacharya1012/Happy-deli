@@ -1,126 +1,101 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="style.css">
-
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <title>Happy Deli Branches</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
- 
-    <header>
-  <nav class="container">
-    <h2>Happy Deli</h2>
-    <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="services.html">Services</a></li>
-  <li><a href="careers.html">Careers</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="branches.html">Branches</a></li> <!-- NEW LINK -->
-</ul>
 
-  </nav>
+<!-- ======= HEADER ======= -->
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Happy Deli</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="branches.html" class="active">Branches</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
-</body>
-</html><section class="container branches-page">
+
+<!-- ======= BRANCHES MAP ======= -->
+<section class="container" id="branch-map">
   <div class="section-title">
-    <h2>Our Branches</h2>
+    <h2>Our Branches in Nepal</h2>
   </div>
 
-  <p style="text-align:center; max-width:800px; margin: 0 auto 40px;">
-    Happy Deli operates multiple branches across Nepal. Find branch details and their coverage areas below.
-  </p>
+  <div class="map-background-container">
+    <!-- Background Map -->
+    <img src="assets/images/nepal-map.png" alt="Nepal Map" class="nepal-map-bg">
 
-  <div class="branches-grid">
-    <!-- Branch 1 -->
-    <div class="branch-card">
-      <i class="fas fa-building stat-icon"></i>
-      <h3>Kathmandu Branch</h3>
-      <!-- <p><strong>Phone:</strong> 9851126762</p> -->
-      <p><strong>Coverage Areas:</strong> Kathmandu, Lalitpur, Bhaktapur</p>
-    </div>
+    <!-- Branch Cards Overlay -->
+   <!-- <div class="branch-cards-overlay">
+  <div class="branch-card"> -->
+    <!-- <h3>4 NO JEETPUR</h3>
+    <p>
+      <strong>Coverage:</strong> 
+      <span class="coverage-preview">
+        THAKURAPUR GADEJA, JHUGA, BHAKTAULI, KARMANA
+      </span>
+      <span class="coverage-full" style="display:none;">
+        , DEUWAPAR, BHUNCHI, BANGAGANGAPUL, TILOKMARG, BISANPURA, SELFICHOK, DHRAMA KATA, BANGAI, MOTIPUR, KAILIBANGAI, BHAKLAPUR, SUTHAULI, BAIDAULI, KOPWA, PARTIDADA, MANOHARAPUR, JHANDA, MADHAULI, DUGA
+      </span>
+    </p>
+    <a href="javascript:void(0);" class="see-more-btn" onclick="toggleCoverage(this)">See More</a> -->
+  <!-- </div> -->
 
-    <!-- Branch 2 -->
-    <div class="branch-card">
-      <i class="fas fa-building stat-icon"></i>
-      <h3>Pokhara Branch</h3>
-      <!-- <p><strong>Phone:</strong> 9851134567</p> -->
-      <p><strong>Coverage Areas:</strong> Pokhara, Lekhnath, surrounding areas</p>
-    </div>
+  <!-- Search Input -->
+<div style="text-align:center; margin-bottom:30px;">
+  <input type="text" id="branch-search" placeholder="Search by branch, district, municipality or coverage..." style="width:80%; padding:10px; border-radius:8px; border:1px solid #ccc; z-index:10; position:relative;">
+</div>
 
-    <!-- Branch 3 -->
-    <div class="branch-card">
-      <i class="fas fa-building stat-icon"></i>
-      <h3>Biratnagar Branch</h3>
-      <!-- <p><strong>Phone:</strong> 9851145678</p> -->
-      <p><strong>Coverage Areas:</strong> Biratnagar, Itahari, Dharan</p>
-    </div>
+<div id="branch-cards-overlay" class="branch-cards-overlay"></div>
 
-    <!-- Branch 4 -->
-    <div class="branch-card">
-      <i class="fas fa-building stat-icon"></i>
-      <h3>Butwal Branch</h3>
-      <!-- <p><strong>Phone:</strong> 9851156789</p> -->
-      <p><strong>Coverage Areas:</strong> Butwal, Bhairahawa, surrounding areas</p>
-    </div>
 
-    <!-- Branch 5 -->
-    <div class="branch-card">
-      <i class="fas fa-building stat-icon"></i>
-      <h3>Chitwan Branch</h3>
-      <!-- <p><strong>Phone:</strong> 9851167890</p> -->
-      <p><strong>Coverage Areas:</strong> Bharatpur, Narayangarh, surrounding areas</p>
-    </div>
-  </div>
+
+ 
 </section>
+
 <footer>
   <div class="footer-container">
-    <div class="footer-column">
-      <h4>About Happy Deli</h4>
-      <p>Happy Deli Private Limited is a trusted logistics provider connecting businesses efficiently and reliably across Nepal.</p>
-    </div>
-
-    <div class="footer-column">
-      <h4>Quick Links</h4>
-      <a href="index.html">Home</a><br>
-      <a href="services.html">Services</a><br>
-      <a href="careers.html">Careers</a><br>
-      <a href="contact.html">Contact</a>
-    </div>
-
-    <div class="footer-column">
+     <div class="footer-column">
       <h4>Contact Us</h4>
-      <p>📍 Kathmandu, Nepal</p>
-      <p>📞 +977 9851126762</p>
+      <p>📍 Thapagaau-11, Kathmandu, Nepal</p>
+      <p>📞 +977 9713094438</p>
       <p>✉️ rapidexpress2025@gmail.com</p>
       <div class="social-icons">
-        <a href="https://www.facebook.com/sanam.acharya.2025/"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+       <a href="https://www.facebook.com/yourprofile" target="_blank" class="facebook-icon">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/yourprofile" target="_blank" class="instagram-icon">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@yourprofile" target="_blank" class="tiktok-icon">
+        <i class="fab fa-tiktok"></i>
+    </a>
       </div>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2026 Happy Deli Private Limited. All Rights Reserved.</p>
+    <p>&copy; 2026 Happy Daily Private Limited. All Rights Reserved.</p>
   </div>
 </footer>
 
-<!-- WhatsApp Button -->
-<a href="https://wa.me/9779851126762" target="_blank" id="whatsapp-btn">💬</a>
-<a id="whatsapp-btn" href="https://wa.me/9851126762" target="_blank" title="Chat with us on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+<a 
+  href="https://wa.me/9779713094438" 
+  target="_blank" 
+  id="whatsapp-btn" 
+  title="Chat with us on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
 </a>
-<script src="main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script src="email.js"></script>
+
+<script src="branches.js"></script>
 </body>
 </html>
