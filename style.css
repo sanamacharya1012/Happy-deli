@@ -25,7 +25,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('assets/images/roasted_garlic_butter.jpg') center center no-repeat; /* path to local logo */
+    background: url('assets/images/HDX Logo.jpg') center center no-repeat; /* path to local logo */
     background-size: cover;  /* cover entire page */
     opacity: 0.05;           /* subtle transparency */
     pointer-events: none;     /* allows clicks through */
@@ -419,7 +419,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* Pins */
-.map-pin {
+/* .map-pin {
     position: absolute;
     transform: translate(-50%, -100%);
     cursor: pointer;
@@ -437,7 +437,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* Tooltip */
-.map-pin .pin-tooltip {
+/* .map-pin .pin-tooltip {
     display: none;
     position: absolute;
     bottom: 120%;
@@ -452,16 +452,16 @@ input:focus, textarea:focus, select:focus {
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.3s;
-}
+} */
 
 /* Show tooltip when active */
-.map-pin.active .pin-tooltip {
+/* .map-pin.active .pin-tooltip {
     display: block;
     opacity: 1;
-}
+} */
 
-.map-container {
-    position: relative; /* MUST have relative to position pins */
+/* .map-container {
+    position: relative; 
     max-width: 900px;
     margin: 0 auto;
 }
@@ -488,10 +488,10 @@ input:focus, textarea:focus, select:focus {
 .map-pin:hover i {
     transform: scale(1.2);
     color: #0f4c81;
-}
+} */ */
 
 /* Tooltip */
-.map-pin .pin-tooltip {
+/* .map-pin .pin-tooltip {
     display: none;
     position: absolute;
     bottom: 120%;
@@ -514,11 +514,10 @@ input:focus, textarea:focus, select:focus {
 }
 
 .map-container {
-    position: relative; /* MUST have relative to position pins */
-    max-width: 900px;
+    position: relative; 
     margin: 0 auto;
-}
-
+} */
+/* 
 .map-image {
     width: 100%;
     display: block;
@@ -541,10 +540,10 @@ input:focus, textarea:focus, select:focus {
 .map-pin:hover i {
     transform: scale(1.2);
     color: #0f4c81;
-}
+} */
 
 /* Tooltip */
-.map-pin .pin-tooltip {
+/* .map-pin .pin-tooltip {
     display: none;
     position: absolute;
     bottom: 120%;
@@ -564,7 +563,7 @@ input:focus, textarea:focus, select:focus {
 .map-pin.active .pin-tooltip {
     display: block;
     opacity: 1;
-}
+} */
 
 /* ===================== */
 /* Animations */
